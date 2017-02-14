@@ -2,12 +2,7 @@
 
 <head>
 	<style>
-	body {
-		background-color: black;
-	  color: rgba(255,255,255,.99);
-	  font-family: Lucida grande;
-	  letter-spacing: 3px;
-	}
+
 
 	.blinking-cursor {
 	  font-weight: 100;
@@ -64,15 +59,50 @@
 	    color: white;
 	  }
 	}
+
+	body {
+		background-color: #101010;
+	  color: rgba(255,255,255,.99);
+	  font-family: Lucida grande;
+	}
+
+	div {
+		font-size:150%; text-align: center;
+	}
+	.setup {
+	  letter-spacing: 3px;
+		margin: 4em 0 3em;
+	}
+
+	.sell em {
+		font-size: 150%;
+		font-style: normal;
+	}
+	div#screenshot {
+		background: #777;
+	  width: 160px;
+	  height: 280px;
+	  margin: 0 auto;
+	}
+	#store-link img {
+		border-radius: 8px;
+		box-shadow: 0px 2px 32px 4px rgba(255,255,255,0.5);
+	}
 	</style>
 </head>
 
 <body>
-	<div style="margin-top:9em; font-size:200%; text-align: center">
-	Your life is ending<br><br>
-	One pixel at a time<br><br>
-	<b class="blinking-cursor">.</b><br><br>
-	Fetch the popcorn
+	<div class="setup">
+		<p>Your life is ending</p>
+		<p>One pixel at a time</p>
+		<p><b class="blinking-cursor">.</b></p>
+
+		<!-- <p>Fetch the popcorn</p> -->
+	</div>
+	<div class="sell">
+		<p><em>All of a sudden</em></p>
+		<div id="screenshot"></div>
+		<p><a id="store-link"><img width="200px" src="blackappstore.png"></a></p>
 	</div>
 </body>
 
