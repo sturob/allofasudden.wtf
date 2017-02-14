@@ -1,8 +1,79 @@
-<div style="margin-top:9em; font-size:200%; text-align: center">
-Your life is ending
-<br><br>
-One pixel at a time
-<br><br>
-<br><br>
-Fetch the popcorn
-</div>
+<html>
+
+<head>
+	<style>
+	body {
+		background-color: black;
+	  color: rgba(255,255,255,.99);
+	  font-family: Lucida grande;
+	  letter-spacing: 3px;
+	}
+
+	.blinking-cursor {
+	  font-weight: 100;
+	  font-size: 30px;
+	  color: #2E3D48;
+	  -webkit-animation: 1s blink step-end infinite;
+	  -moz-animation: 1s blink step-end infinite;
+	  -ms-animation: 1s blink step-end infinite;
+	  -o-animation: 1s blink step-end infinite;
+	  animation: 1s blink step-end infinite;
+	}
+
+	@keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: white;
+	  }
+	}
+
+	@-moz-keyframes blink {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: white;
+	  }
+	}
+
+	@-webkit-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: white;
+	  }
+	}
+
+	@-ms-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: white;
+	  }
+	}
+
+	@-o-keyframes "blink" {
+	  from, to {
+	    color: transparent;
+	  }
+	  50% {
+	    color: white;
+	  }
+	}
+	</style>
+</head>
+
+<body>
+	<div style="margin-top:9em; font-size:200%; text-align: center">
+	Your life is ending<br><br>
+	One pixel at a time<br><br>
+	<b class="blinking-cursor">.</b><br><br>
+	Fetch the popcorn
+	</div>
+</body>
+
+</html>
